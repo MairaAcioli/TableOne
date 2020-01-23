@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="285" id="KGk-i7-Jjw" customClass="ReceberTableViewCell" customModule="AppReceitaReceberRestaurante" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="211"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="211"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dnP-9F-hG6">
+                        <rect key="frame" x="16" y="16" width="288" height="142"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="dnP-9F-hG6" secondAttribute="height" multiplier="144:71" id="20S-hB-sRe"/>
+                            <constraint firstAttribute="width" constant="288" id="gbv-vT-W1c"/>
+                            <constraint firstAttribute="height" constant="142" id="rhI-Od-B6w"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gi6-Mq-ZUL">
+                        <rect key="frame" x="16" y="160" width="288" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="288" id="Ppz-M0-fKU"/>
+                            <constraint firstAttribute="height" constant="24" id="iyD-d9-d1C"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBk-jG-N8F">
+                        <rect key="frame" x="16" y="182" width="288" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="288" id="F6o-mF-R1v"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gi6-Mq-ZUL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="3mw-F6-gNg"/>
+                    <constraint firstItem="dnP-9F-hG6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="6lt-EK-E5l"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gi6-Mq-ZUL" secondAttribute="bottom" constant="16" id="Obh-1H-ZXX"/>
+                    <constraint firstItem="gi6-Mq-ZUL" firstAttribute="top" secondItem="dnP-9F-hG6" secondAttribute="bottom" constant="2" id="Qrh-Gz-ecZ"/>
+                    <constraint firstAttribute="bottom" secondItem="gBk-jG-N8F" secondAttribute="bottom" constant="10" id="R4c-Ji-3SI"/>
+                    <constraint firstItem="gBk-jG-N8F" firstAttribute="top" secondItem="dnP-9F-hG6" secondAttribute="bottom" constant="24" id="R8T-rY-seS"/>
+                    <constraint firstItem="gBk-jG-N8F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="WnO-RT-BUj"/>
+                    <constraint firstAttribute="trailing" secondItem="gBk-jG-N8F" secondAttribute="trailing" constant="16" id="ojC-LI-POV"/>
+                    <constraint firstAttribute="trailing" secondItem="dnP-9F-hG6" secondAttribute="trailing" constant="16" id="tfO-Rv-ved"/>
+                    <constraint firstItem="dnP-9F-hG6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="y1k-Uy-5Ax"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="fonteReceberLabel" destination="gBk-jG-N8F" id="xdK-WD-7Hs"/>
+                <outlet property="receberImageView" destination="dnP-9F-hG6" id="x3e-PR-F7u"/>
+                <outlet property="tituloReceberLabel" destination="gi6-Mq-ZUL" id="cMh-j5-M5x"/>
+            </connections>
+            <point key="canvasLocation" x="205.79710144927537" y="119.53125"/>
+        </tableViewCell>
+    </objects>
+</document>
